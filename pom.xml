@@ -7,8 +7,6 @@
     <groupId>org.example</groupId>
     <artifactId>Rest-Assured-Sample</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -49,6 +47,25 @@
             <version>5.4.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>5.5.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>5.5.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.32.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -65,17 +82,6 @@
             </plugin>
         </plugins>
     </build>
-
-<!--    To use the report goals in your POM or parent POM-->
-<!--    <reporting>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-report-plugin</artifactId>-->
-<!--                <version>3.3.1</version>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </reporting>-->
 
     <properties>
         <webdriver.chrome>C:\softwares\chromedriver.exe</webdriver.chrome>
